@@ -1,0 +1,27 @@
+{
+  "name": "{{ APPLICATION_NAME }}",
+  "version": "0.0.1",
+  "description": "{{ APPLICATION_DESCRIPTION }}",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "scripts": {
+    "login": "",
+    "publish:patch": "npm version patch && npm run build && npm publish",
+    "publish:minor": "npm version minor && npm run build && npm publish",
+    "publish:major": "npm version major && npm run build && npm publish",
+    "build": "rimraf build && tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.7",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@aws-lambda-powertools/logger": "^1.17.0",
+    "@types/aws-lambda": "^8.10.131",
+    "aws-lambda": "^1.0.7"
+  }
+}

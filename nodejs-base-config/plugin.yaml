@@ -9,7 +9,7 @@ metadata:
 spec:
   type: app
   compatibility:
-    - python
+    - nodejs
   docs:
     pt-br: docs/pt-br/docs.md
     en-us: docs/en-us/docs.md
@@ -19,22 +19,15 @@ spec:
     - Api
   stk-projects-only: false
   inputs:
-    - label: Type name of your resource
-      name: resource
+    - label: App name
+      name: APPLICATION_NAME
       type: text
       required: true
-      default: Client
-      pattern: '([A-Z][a-z]+)+'
-      help: 'Inform your resource name (e.g.: Client)'
-    - label: Choose http method of new endpoint
-      name: method
+      default: nodejs-application
+      pattern: '^[a-z]+(?:-[a-z]+)*$'
+      help: 'Inform your application name (e.g.: nodejs-application)'
+    - label: App description
+      name: APPLICATION_DESCRIPTION
       type: text
-      items:
-        - GET
-        - POST
-        - PUT
-        - DELETE
-        - PATCH
-      default: GET
-      required: true
-      help: 'Inform the method of the endpoint (e.g.: post or delete)'
+      required: false
+      help: 'Inform the goal of your application'

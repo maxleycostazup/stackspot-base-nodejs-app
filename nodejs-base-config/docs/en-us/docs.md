@@ -1,45 +1,45 @@
-Fill out this template to help users use your content. The following information will appear on the Plugin sections of the StackSpot Portal.
+# Nodejs Base Config Plugin
 
-
-## Plugin Name
-
-Write concisely describing your Plugin content.
-
-Example:
-> This Plugin shows you how to fill out information to use Plugins on the StackSpot platform. 
+Develop and establish the foundational architecture of a Node.js project, adhering to best practices and standardized
+methodologies to ensure optimal structure and organization.
 
 ## Requirements
 
-- Describe in a list all the items and necessary action before applying or creating the Plugin
-
-Example:
-1. Install the dependencies 
-2. Create the configuration file 
-3. Create the **template** folder
+- **File Creation:**
+    - Create a new directory for your project.
+    - **Example Command:** `mkdir nodejs-application`
 
 ## Usage
 
-Add the steps for the user to use your Plugin:
+Follow these steps to set up and use your new Node.js application:
 
-- What are the inputs?
-- Which methods should we know?
-- What are the resources?
-- Add the Plugin dependencies, if necessary.
+1. **Navigate to Your New Directory:**
+    - Change into the directory you just created.
+    - **Example Command:** `cd nodejs-application`
 
-Example: 
-On your application’s folder, apply the **plugin-doc-template** plugin and follow the instructions:
-1. Execute the command:
-`
-stk apply plugin /Users/Home/plugin-doc-template
-`
+2. **Apply the Plugin:**
+    - Use the provided command to apply the necessary plugin for your project.
+    - **Example Command:** `stk apply plugin <plugin-base-path>`
 
+3. **Configure Your Application:**
+    - Follow the prompts to insert the required inputs.
+    - These inputs will typically include the application infos.
 
-## Release Notes
+## Inputs:
 
-This section is only necessary if you publish a new Plugin version. Add what was changed, fixed, and the new features. 
+### App Name
 
-Example:
-### plugin-doc-template v1.0.0
+- **Purpose:** Give your Node.js application a unique identity.
+- **Requirements:**
+    - **Format:** Lowercase letters and hyphens only (e.g., `nodejs-app`, `hello-world`).
+    - **Mandatory:** Yes, you must name your app.
+- **Default Value:** `nodejs-application` if you're undecided.
+- **Tip:** Think of a name that's both descriptive and easy to remember.
 
-#### Features
-Added new templates
+### App Description
+
+- **Purpose:** Describe what your app does - your app's elevator pitch!
+- **Requirements:**
+    - **Format:** No specific format, express in your own words.
+    - **Mandatory:** No, it's optional.
+- **Tip:** Use this space to outline the primary function or the problem your app solves.

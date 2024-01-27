@@ -1,46 +1,44 @@
-Preencha corretamente este template para que os usuários consigam utilizar o seu conteúdo. As informações serão expostas na página do Plugin no Portal da StackSpot.
+# Plugin de Configuração Básica Nodejs
 
-## Nome Plugin
+Desenvolva e estabeleça a arquitetura fundamental de um projeto Node.js, aderindo às melhores práticas e metodologias padronizadas para garantir uma estrutura e organização ótimas.
 
-Escreva uma descrição clara e breve do conteúdo Plugin. 
+## Requisitos
 
-Exemplo:
-> Este Plugin contém instruções de como preencher as informações para usar os Plugins na plataforma StackSpot.
-
-## Pré-requisitos
-
-- Descreva em uma lista todos os itens e ações necessárias antes de aplicar Plugin.
-
-Exemplo:
-1. Instalar dependências
-2. Crie o arquivo de configuração
-3. Crie a pasta **template**
+- **Criação de Arquivo:**
+    - Crie um novo diretório para o seu projeto.
+    - **Comando de Exemplo:** `mkdir nodejs-application`
 
 ## Uso
 
-Descreva as etapas para o usuário utilizar este Plugin:
+Siga estes passos para configurar e usar sua nova aplicação Node.js:
 
-1. Quais as entradas
-2. Quais os métodos usar
-3. Quais os recursos
-4. E se necessário, adicione as dependências do seu Plugin.
+1. **Navegue até o seu Novo Diretório:**
+    - Mude para o diretório que você acabou de criar.
+    - **Comando de Exemplo:** `cd nodejs-application`
 
-Exemplo: 
-Na pasta do seu aplicativo, aplique o **plugin-doc-template** para preencher os arquivos abaixo:
+2. **Aplicar o Plugin:**
+    - Use o comando fornecido para aplicar o plugin necessário para o seu projeto.
+    - **Comando de Exemplo:** `stk apply plugin <plugin-base-path>`
 
-1. Execute o comando:
-`
-stk apply plugin /Users/Home/plugin-doc-template
-`
+3. **Configurar Sua Aplicação:**
+    - Siga as instruções para inserir as entradas necessárias.
+    - Estas entradas normalmente incluem as informações da aplicação.
 
-2. Preencha as informações do Plugin seguindo os exemplos de modelo de arquivo x;
+## Entradas:
 
-## Release Notes
+### Nome da Aplicação
 
-Esta seção só é necessária se você publicar uma nova versão do Plugin. Apenas adicione o que foi modificado ou adicionado.
+- **Finalidade:** Dê à sua aplicação Node.js uma identidade única.
+- **Requisitos:**
+    - **Formato:** Apenas letras minúsculas e hifens (ex.: `nodejs-app`, `hello-world`).
+    - **Obrigatório:** Sim, você deve nomear seu aplicativo.
+- **Valor Padrão:** `nodejs-application` se estiver indeciso.
+- **Dica:** Pense em um nome que seja descritivo e fácil de lembrar.
 
-Exemplo:
-### plugin-doc-template v1.0.0
+### Descrição da Aplicação
 
-#### Features
-Novos templates foram adicionados.
+- **Finalidade:** Descreva o que a sua aplicação faz - o pitch da sua aplicação!
+- **Requisitos:**
+    - **Formato:** Sem formato específico, expresse com suas próprias palavras.
+    - **Obrigatório:** Não, é opcional.
+- **Dica:** Use este espaço para delinear a função principal ou o problema que sua aplicação resolve.
